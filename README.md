@@ -109,13 +109,13 @@ In this section, we will be cleaning the data. Here are some of the steps that w
 
 # Conclusion
 
-We found that the original data was the most accurate with an accuracy of 0.92 and undersampled data had an accuracy of 0.918.However, the undersampled data had the lower GINI coefficient of 0.63 after isotonic regression which shows that the undersampled data has a lower data inequality. On top of that, the undersampled data has the lowest false negative rate and the importance of this has been explained above.
+We found that the original data was the most accurate with an accuracy of 0.92 and undersampled data had an accuracy of 0.918.However, the undersampled data had the lower GINI coefficient of 0.58 after isotonic regression which shows that the undersampled data has a lower data inequality. On top of that, the undersampled data has the lowest false negative rate and the importance of this has been explained above.
 
-Looking at the Original data and oversampled data, feature of importances graph, we can see that the models placed a higher importance on **Heart Attack**, **General Health** and **Age** while the undersampled data placed more importance on **Pneumonia vaccine, High Cholesterol and Age**. From this we can deduce that age is a important factor in prediciting heart disease. 
+Looking at the Original data, feature of importances graph, we can see that the model placed a higher importance on Age, General Health,Difficulty Walking and High Blood Pressure where as the undersampled data, feature of importances graph placed a higher importance on High Cholestrol, Pneumonia Vaccine, Heart Attack and Age. Lastly, the oversampled data, feature of importances graph placed a higher importance on Heart Attack, General Health, Age and High Blood Pressure. From this, we can deduce that age is one of the most important factor in predicting heart disease, followed very closely by heart attack.
 
-**However** all of the features have importance levels that we cannot ignore. All the features importance are relatively high   which shows all the variables have a role in predicting heart disease.
+However all of the features have importance levels that we cannot ignore. All the features importance are relatively high which shows all the variables have a role in predicting heart disease.
 
-#### To answer our initial question, Age, General health, Heart attack, Physical Health, Difficulty walking, High blood pressure, High Cholestrol and Pneumonia Vaccine are health factors which are risk factors of heart disease with age being one of the most, if not the most important factor. 
+To answer our initial question, Age, General health, Heart attack, Physical Health, Difficulty walking, High blood pressure, High Cholestrol and Pneumonia Vaccine are health factors which are risk factors of heart disease with age being one of the most, if not the most important factor.
 
 ## References
 Viadinugroho, R. a. A. (2022, January 6). Imbalanced Classification in Python: SMOTE-ENN Method. Medium. https://towardsdatascience.com/imbalanced-classification-in-python-smote-enn-method-db5db06b8d50
