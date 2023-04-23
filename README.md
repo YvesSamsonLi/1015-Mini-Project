@@ -11,7 +11,7 @@ It was found by the Centre of disease control and prevention that there are many
 As a major health hazard to the population and something that can happen to anyone, we want to understand how other health factors as well as lifestyle habits might influence the risk of one getting heart disease.
 
 ## Sample Collection
-
+Size of dataset is too big and hence will need to be downloaded from Kaggle (account required)
 Dataset is from Kaggle: https://www.kaggle.com/datasets/cdc/behavioral-risk-factor-surveillance-system?select=2015.csv 
 
 This dataset is taken from the Behavioral Risk Factor Surveillance System(BFRSS) survey conducted by the Centre of Disease Control(CDC) yearly in the United States. The survey is conducted over telephone to gather the data on the health status and conditions of the US residents.
