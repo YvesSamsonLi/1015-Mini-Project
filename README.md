@@ -75,7 +75,7 @@ We will train a model to determine if an individual has heart disease or not. Fr
 
 ## Data Preparation
 
-Our dataset has roughly 300 variables. However, we have reduced this to 18 variables as many of the data is either a duplicate or a very similar question asked to respondents. From the remaining dataset, we chose a variety of health factors as well as life habits of the individuals.
+Our dataset has roughly 300 variables. However, we have reduced this to 19 variables as many of the data is either a duplicate or a very similar question asked to respondents. From the remaining dataset, we chose a variety of health factors as well as life habits of the individuals.
 
 The dataset has a mixture of numerical and categorical data. However, there are much more categorical data than numerical. Many of the categorical data are numbered and hence we had to replace them with their original metric.
 
