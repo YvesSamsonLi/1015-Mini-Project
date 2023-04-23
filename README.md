@@ -72,5 +72,21 @@ We have a total of 20 variables, __ of it are numerical while the rest are categ
 We want to link the different health factors and habit of individuals and use it to determine the risk of getting heart disease.
 ​
 We will train a model to determine if an individual has heart disease or not. From that, we will be able to analyse the data and siphon out any important information from the different predictors that we have used. From this, we can find its correlation and determine if that health factor or individual habits, is important in relation to heart disease.
-Data Preparation
 
+## Data Preparation
+
+Our dataset has roughly 300 variables. However, we have reduced this to 18 variables as many of the data is either a duplicate or a very similar question asked to respondents. From the remaining dataset, we chose a variety of health factors as well as life habits of the individuals.
+
+The dataset has a mixture of numerical and categorical data. However, there are much more categorical data than numerical. Many of the categorical data are numbered and hence we had to replace them with their original metric.
+
+We have done this and displayed the data cleaning with graphs to make it easier to visualize
+
+## 2. Data Cleaning
+
+In this section, we will be cleaning the data. Here are some of the steps that will be taken.
+
+1. Selection of variables
+2. Renaming of variables
+3. Removal of NULL data
+4. Removal of duplicate data
+5. renaming of categorical variable values
