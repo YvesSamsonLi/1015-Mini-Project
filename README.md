@@ -63,7 +63,7 @@ In this section, we will mention our data, and what was the question asked to ob
 
 **Heart Disease(response)** - (Ever told) you had angina or coronary heart disease?
 
-We have a total of 19 variables, 4 of it are numerical while the rest are categorical.
+We have a total of 19 variables, 4 of it are numerical 15 of them are categorical.
 
 ## Problem formulation
 ​
