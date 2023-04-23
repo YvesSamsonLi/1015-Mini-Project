@@ -81,7 +81,7 @@ The dataset has a mixture of numerical and categorical data. However, there are 
 
 We have done this and displayed the data cleaning with graphs to make it easier to visualize
 
-## 2. Data Cleaning
+## Data Cleaning
 
 In this section, we will be cleaning the data. Here are some of the steps that will be taken.
 
@@ -90,3 +90,72 @@ In this section, we will be cleaning the data. Here are some of the steps that w
 3. Removal of NULL data
 4. Removal of duplicate data
 5. renaming of categorical variable values
+
+## New tools implemented
+
+**Machine Learning**:
+1. Chi-square test of independance
+2. Binary Cross entropy
+3. Isotonic regression
+
+**Data Processing**
+1. Undersampling (Edited nearest neighbour)
+2. Oversampling (Synthetic minority oversampling technique)
+
+**Evaluation**
+1. Precision-recall
+2. Calibration graph
+3. ROC-AUC
+
+# Conclusion
+
+We found that the original data was the most accurate with an accuracy of 0.92 and undersampled data had an accuracy of 0.918.However, the undersampled data had the lower GINI coefficient of 0.63 after isotonic regression which shows that the undersampled data has a lower data inequality. On top of that, the undersampled data has the lowest false negative rate and the importance of this has been explained above.
+
+Looking at the Original data and oversampled data, feature of importances graph, we can see that the models placed a higher importance on **Heart Attack**, **General Health** and **Age** while the undersampled data placed more importance on **Pneumonia vaccine, High Cholesterol and Age**. From this we can deduce that age is a important factor in prediciting heart disease. 
+
+**However** all of the features have importance levels that we cannot ignore. All the features importance are relatively high   which shows all the variables have a role in predicting heart disease.
+
+#### To answer our initial question, Age, General health, Heart attack, Physical Health, Difficulty walking, High blood pressure, High Cholestrol and Pneumonia Vaccine are health factors which are risk factors of heart disease with age being one of the most, if not the most important factor. 
+
+## References
+Viadinugroho, R. a. A. (2022, January 6). Imbalanced Classification in Python: SMOTE-ENN Method. Medium. https://towardsdatascience.com/imbalanced-classification-in-python-smote-enn-method-db5db06b8d50
+
+GeeksforGeeks. (2023). Isotonic Regression in Scikit Learn. GeeksforGeeks. https://www.geeksforgeeks.org/isotonic-regression-in-scikit-learn/
+
+Brownlee, J. (2019). A Gentle Introduction to Dropout for Regularizing Deep Neural Networks. MachineLearningMastery.com. https://machinelearningmastery.com/dropout-for-regularizing-deep-neural-networks/
+
+Brownlee, J. (2019b). A Gentle Introduction to Batch Normalization for Deep Neural Networks. MachineLearningMastery.com. https://machinelearningmastery.com/batch-normalization-for-training-of-deep-neural-networks/
+
+McNeese, B. (2020, April 25). Are the Skewness and Kurtosis Useful Statistics? BPI Consulting. https://www.spcforexcel.com/knowledge/basic-statistics/are-skewness-and-kurtosis-useful-statistics#:~:text=The%20rule%20of%20thumb%20seems,the%20data%20are%20highly%20skewed
+
+Jordan, J. (2018). Evaluating a machine learning model. Jeremy Jordan. https://www.jeremyjordan.me/evaluating-a-machine-learning-model/
+
+Abhigyan. (2021, December 13). Calculating Accuracy of an ML Model. - Analytics Vidhya - Medium. Medium. https://medium.com/analytics-vidhya/calculating-accuracy-of-an-ml-model-8ae7894802e
+
+sklearn.metrics.f1_score. (n.d.). Scikit-learn. https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html
+
+Fig. 1: Differences between undersampling and oversampling. (n.d.-b). ResearchGate. https://www.researchgate.net/figure/Differences-between-undersampling-and-oversampling_fig1_341164819
+
+Heart Disease and Stroke Prevention. (n.d.-b). https://www.health.ny.gov/diseases/cardiovascular/heart_disease/#:~:text=About%20697%2C000%20people%20die%20of,Americans%20have%20a%20heart%20attack.
+
+Precision-Recall. (n.d.-c). Scikit-learn. https://scikit-learn.org/stable/auto_examples/model_selection/plot_precision_recall.html#:~:text=The%20precision%2Drecall%20curve%20shows,a%20low%20false%20negative%20rate.
+
+Shin, T. (2022b, November 10). Understanding Feature Importance and How to Implement it in Python. Medium. https://towardsdatascience.com/understanding-feature-importance-and-how-to-implement-it-in-python-ff0287b20285
+
+Narkhede, S. (2021b, June 15). Understanding Confusion Matrix - Towards Data Science. Medium. https://towardsdatascience.com/understanding-confusion-matrix-a9ad42dcfd62
+
+Precision-Recall. (n.d.-d). Scikit-learn. http://scikit-learn.org/stable/auto_examples/model_selection/plot_precision_recall.html#:~:text=The%20precision%2Drecall%20curve%20shows,a%20low%20false%20negative%20rate.
+
+Riva, M., & Riva, M. (2023). Batch Normalization in Convolutional Neural Networks | Baeldung on Computer Science. Baeldung on Computer Science. https://www.baeldung.com/cs/batch-normalization-cnn#:~:text=Batch%20Norm%20is%20a%20normalization,learning%20rates%2C%20making%20learning%20easier.
+
+Doshi, K. (2022, January 6). Batch Norm Explained Visually — How it works, and why neural networks need it. Medium. https://towardsdatascience.com/batch-norm-explained-visually-how-it-works-and-why-neural-networks-need-it-b18919692739
+
+Towards Data Science. (n.d.). Towards Data Science. https://towardsdatascience.com/dropout-in-neural-networks-47a162d621d9%20https://machinelearningmastery.com/dropout-for-regularizing-deep-neural-networks/
+
+D’Agostino, A. (2023b, February 4). Get started with TensorFlow 2.0 — Introduction to deep learning. Medium. https://towardsdatascience.com/a-comprehensive-introduction-to-tensorflows-sequential-api-and-model-for-deep-learning-c5e31aee49fa#:~:text=The%20sequential%20model%20allows%20us,for%20building%20deep%20learning%20models.
+
+Vishwakarma, S. (2023b). Why is Sigmoid Function Important in Artificial Neural Networks? Analytics Vidhya. https://www.analyticsvidhya.com/blog/2023/01/why-is-sigmoid-function-important-in-artificial-neural-networks/#:~:text=Source%3A%20Pexels-,The%20sigmoid%20function%20is%20commonly%20used%20as%20an%20activation%20function,non%2Dlinearity%20into%20the%20model.
+
+Binary Cross Entropy: Where To Use Log Loss In Model Monitoring. (2023b, March 2). Arize AI. https://arize.com/blog-course/binary-cross-entropy-log-loss/#:~:text=What%20Is%20Binary%20Cross%20Entropy,equate%20to%20high%20accuracy%20values.
+
+Binary Classification. (n.d.-b). https://www.learndatasci.com/glossary/binary-classification/#:~:text=each%20binary%20classifier-,What%20is%20Binary%20Classification%3F,Application
